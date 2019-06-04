@@ -1,0 +1,315 @@
+* {
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+}
+
+.up_button {
+    position: relative;
+}
+
+.up_b_w {
+    display: flex;
+    position: fixed;
+    flex-flow: column-reverse;
+    bottom: 5vh;
+    right: 5%;
+}
+
+.up_button a {
+    display: flex;
+    justify-content: center;
+}
+
+.up_button a:nth-child(2) {
+    color: whitesmoke;
+}
+
+.up_button a:nth-child(4) {
+    color: whitesmoke;
+}
+
+section,
+footer {
+    padding: 20vh 15% 10vh 15%;
+}
+
+.nav {
+    padding: 0px 15% 0px 15%;
+    margin: 0;
+}
+
+.nav,
+#header,
+#work,
+#exhib {
+    background-color: whitesmoke;
+    color: midnightblue;
+}
+
+#work h3 {
+    font-weight: 600;
+}
+
+#exhib h3 {
+    font-weight: 600;
+}
+
+#header {
+    padding-top: 5%;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.me {
+    display: flex;
+    width: 50%;
+    align-items: flex-start;
+    padding-bottom: 5%;
+}
+
+.me img {
+    width: 100%;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.nav .contact {
+
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.nav .contact h3 {
+    font-weight: 100;
+}
+
+.contact {
+    display: flex;
+    flex-flow: row wrap;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+
+.contact .contact_w {
+    flex-grow: 2;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding: 20px 20px 20px 0px;
+}
+
+.nav .contact .contact_w {
+    flex-grow: 0;
+}
+
+.contact img,
+svg {
+    height: 30px;
+    display: flex;
+}
+
+.contact .contact_w p {
+    padding-left: 10px;
+}
+
+
+.skill_w {
+    flex-flow: row wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skillset ul {
+    padding: 0px 0px 0px 0px;
+}
+
+.skillset ul li {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    list-style: none;
+}
+
+.skillset {
+    display: flex;
+    width: 40%;
+    padding-bottom: 5%;
+    flex-flow: column;
+}
+
+.skillset ul {
+    display: flex;
+    width: 80%;
+    flex-flow: column;
+}
+
+#skill .skillset li > span {
+    display: flex;
+    height: 30px;
+    width: 100%;
+    border: 1px solid white;
+    position: relative;
+}
+
+#skill .skillset li span .h3_w {
+    position: absolute;
+    padding-left: calc(100% + 20px);
+    height: 26px;
+    align-items: center;
+    display: flex;
+}
+
+#skill .skillset li > span span {
+    display: flex;
+    position: absolute;
+    height: 26px;
+    background-color: white;
+}
+
+#skill .skillset li .span_w {
+    margin: left;
+    padding: 1px;
+    display: flex;
+}
+
+/*skills*/
+
+#skill #skill1 ul li:nth-child(1) > span span {
+    width: calc(100% - 2px);
+}
+
+#skill #skill1 ul li:nth-child(2) > span span {
+    width: calc(100% - 2px);
+}
+
+
+#skill #skill1 ul li:nth-child(3) > span span {
+    width: calc(50% - 2px);
+}
+
+
+#skill #skill1 ul li:nth-child(4) > span span {
+    width: calc(50% - 2px);
+}
+
+#skill #skill1 ul li:nth-child(5) > span span {
+    width: calc(25% - 2px);
+}
+
+/*languages*/
+
+#skill #skill2 ul li:nth-child(1) > span span {
+    width: calc(100% - 2px);
+}
+
+#skill #skill2 ul li:nth-child(2) > span span {
+    width: calc(100% - 2px);
+}
+
+
+#skill #skill2 ul li:nth-child(3) > span span {
+    width: calc(50% - 2px);
+}
+
+
+#skill #skill2 ul li:nth-child(4) > span span {
+    width: calc(25% - 2px);
+}
+
+h3 {
+    padding-bottom: 10px
+}
+
+#edu .edu_item p {
+    margin-bottom: 0.8em;
+}
+
+#skill h3 {
+    padding-bottom: 0px;
+}
+
+#work p:first-child {
+    padding-bottom: 10px;
+}
+
+#work button {
+    padding: 0;
+}
+
+#exhib h3 {
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
+#description .desc_w {
+    width: 50%;
+}
+
+footer {
+    margin: auto;
+    padding-top: 10vh;
+    padding-bottom: 15vh;
+}
+
+footer a {
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .me {
+        width: 100%;
+    }
+
+    .skill_w {
+        flex-flow: column wrap;
+    }
+
+    .skillset {
+        width: 100%;
+    }
+
+    #skill .skillset {
+        padding-bottom: 60px;
+    }
+
+    #description .desc_w {
+        width: 100%;
+    }
+
+    #edu .edu_item p {
+        margin-bottom: 0;
+    }
+
+    .skillset ul li {
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+
+    .up_b_w {
+        flex-flow: row;
+    }
+
+    .up_button a:nth-child(2) {
+        visibility: hidden;
+    }
+
+    .up_button a:nth-child(1) {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .skillset ul li {
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+
+    section,
+    footer {
+        padding: 15vh 15% 10vh 15%;
+    }
+
+    #skill .skillset {
+        padding-bottom: 20px;
+    }
+}
